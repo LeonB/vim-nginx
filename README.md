@@ -2,6 +2,13 @@
 
 Extraction of the Nginx Vim syntax files from http://hg.nginx.org/nginx/.
 
+## Installation
+
+I recommend using [Tim Pope's pathogen
+plugin](https://github.com/tpope/vim-pathogen), [Shougo's NeoBundle
+plugin](https://github.com/Shougo/neobundle.vim) or [Gmarik's Vundle
+plugin](https://github.com/gmarik/Vundle.vim) to install this.
+
 ## How this repository is created
 
 ``` shell
@@ -14,7 +21,7 @@ git gc
 git prune
 ```
 
-## Updating
+## Updating this repository
 
 ``` shell
 git checkout -b rebase
