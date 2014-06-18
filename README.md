@@ -14,6 +14,18 @@ git gc
 git prune
 ```
 
+## Updating
+
+``` shell
+git checkout -b rebase
+git fetch nginx master
+git reset --hard nginx/master
+git filter-branch -f --subdirectory-filter contrib/vim HEAD -- --all
+git checkout master
+git merge rebase
+git branch -D rebase
+```
+
 ## License
 
 Same terms as [Nginx itself](http://nginx.org/LICENSE).
